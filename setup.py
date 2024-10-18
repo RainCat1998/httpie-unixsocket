@@ -5,11 +5,11 @@ setup(
     name='httpie-unixsocket',
     description='UNIX socket transport plugin for HTTPie.',
     long_description=open('README.rst').read().strip(),
-    version='0.0.0',
-    author='Marc Abramowitz',
+    version='0.0.1',
+    author='RainCat1998',
     author_email='marc@marc-abramowitz.com',
     license='BSD',
-    url='https://github.com/httpie/httpie-unixsocket',
+    url='https://github.com/RainCat1998/httpie-unixsocket',
     py_modules=['httpie_unixsocket'],
     zip_safe=False,
     entry_points={
@@ -19,7 +19,7 @@ setup(
     },
     install_requires=[
         'httpie>=0.7.0',
-        'requests_unixsocket'
+        'requests_unixsocket @ git+https://github.com/RainCat1998/requests-unixsocket.git'
     ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
